@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 import random
-
+import re
 
 nos = int(input('Informe número de nós servidores: '))
 print('Número de nós na simulação: {}'.format(nos))
 tempo = int(input('Informe intervalo de tempo em minutos: '))
 print('Intervalo de tempo: {} min'.format(tempo))
-arq = open('Eventos.txt','w')
+arq = open('Eventos.h','w')
 for i in range(tempo):
     array = []
     array = random.sample(range(0,nos), random.randint(0, nos))
@@ -16,6 +16,7 @@ for i in range(tempo):
     if 1 in array:
         array.remove(1)
     print('minuto {} / evento nos nós: {} '.format(i, array))
+    array=str(array).replace('[','{').replace(']','}')
     arq.write('{}\n'.format(array))
 arq.close()
 '''
