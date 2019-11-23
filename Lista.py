@@ -18,6 +18,9 @@ for i in range(tempo):
         array.remove(1)
     array=str(array).replace('[','{').replace(']','}')
     print('minuto {} / evento nos nós: {} '.format(i, array))
-    arq.write('{},\n'.format(array))
+    if i<tempo-1:
+       arq.write('{},\n'.format(array))
+    else:
+       arq.write('{}\n'.format(array))
 arq.write('};\n')
 arq.close()
