@@ -1,6 +1,6 @@
 '''
        Lista.py is a generator of events
-       Copyright (c) 2019 Yuri M. Ses <your-email@icen.ufpa.br>
+       Copyright (c) 2019 Yuri M. S. E. Santo <your-email@icen.ufpa.br>
        Copyright (c) 2019 Marlon W. Santos <marlon.santos.santos@icen.ufpa.br>
 
 
